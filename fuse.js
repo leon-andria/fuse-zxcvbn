@@ -7,9 +7,8 @@ fuse = FuseBox.init({
     cache: false,
     plugins: [
         WebIndexPlugin(),
-        // QuantumPlugin({     
-        //     target: "universal",
-        //     bakeApiIntoBundle: "bundle",            
+        // QuantumPlugin({                 
+        //     containedAPI: false,            
         //     extendServerImport: true       
         // })
     ]
