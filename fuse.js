@@ -7,10 +7,10 @@ fuse = FuseBox.init({
     cache: false,
     plugins: [
         WebIndexPlugin(),
-        // QuantumPlugin({                 
+        QuantumPlugin({                 
         //     containedAPI: false,            
         //     extendServerImport: true       
-        // })
+        })
     ]
 });
 
