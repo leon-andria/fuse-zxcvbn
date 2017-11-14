@@ -6,5 +6,5 @@ import * as zxcvbn from "zxcvbn";
 // export { zxcvbn };
 
 export function Call() {
-    console.log(zxcvbn);
+    console.log(1, zxcvbn);
 }

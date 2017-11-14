@@ -1,7 +1,8 @@
 
 let m = async () => {
-    const e = await import("pwd");
-    e.Call();
+    const e = await import("zxcvbn");
+    console.log(e)
+    
 }
 
 m();

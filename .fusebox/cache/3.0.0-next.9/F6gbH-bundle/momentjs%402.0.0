@@ -1,0 +1,3 @@
+FuseBox.pkg("momentjs", {}, function(___scope___){
+return ___scope___.entry = "index.js";
+});

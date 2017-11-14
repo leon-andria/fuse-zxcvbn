@@ -3,8 +3,7 @@ const { FuseBox, CSSPlugin, SassPlugin, WebIndexPlugin, QuantumPlugin, Sparky } 
 fuse = FuseBox.init({
     homeDir: "src",
     output: "dist/$name.js",
-    experimentalFeatures: true,
-    cache: false,
+    targer: "browser",
     plugins: [
         WebIndexPlugin(),
         QuantumPlugin({                 
@@ -14,13 +13,15 @@ fuse = FuseBox.init({
     ]
 });
 
-fuse.dev({
-    port: 3000
-});
+fuse.dev();
 
 const bundle = fuse
         .bundle("bundle")
-        .split("lib/zxcvbn.js", "pwd > lib/zxcvbn.ts")
-        .instructions("> [index.ts] + lib/zxcvbn.ts");
+        .splitConfig({
+            browser: "/",
+            dest: "/"
+        })
+        .watch()        
+        .instructions("> index.ts");
 
 fuse.run();

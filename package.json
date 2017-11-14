@@ -10,11 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.19.2",
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "express": "^4.16.2",
-    "fuse-box": "^2.4.0",
+    "fuse-box": "^3.0.0-next.9",
     "typescript": "^2.6.1"
   }
 }

@@ -1,0 +1,48 @@
+{
+  "tree": {
+    "momentjs@2.0.0": {
+      "deps": {},
+      "name": "momentjs",
+      "version": "2.0.0"
+    },
+    "moment@2.19.2": {
+      "deps": {},
+      "name": "moment",
+      "version": "2.19.2"
+    },
+    "zxcvbn@4.4.2": {
+      "deps": {},
+      "name": "zxcvbn",
+      "version": "4.4.2"
+    }
+  },
+  "flat": {
+    "momentjs@2.0.0": {
+      "name": "momentjs",
+      "version": "2.0.0",
+      "files": [
+        "index.js"
+      ]
+    },
+    "moment@2.19.2": {
+      "name": "moment",
+      "version": "2.19.2",
+      "files": [
+        "moment.js"
+      ]
+    },
+    "zxcvbn@4.4.2": {
+      "name": "zxcvbn",
+      "version": "4.4.2",
+      "files": [
+        "lib/main.js",
+        "lib/matching.js",
+        "lib/frequency_lists.js",
+        "lib/adjacency_graphs.js",
+        "lib/scoring.js",
+        "lib/time_estimates.js",
+        "lib/feedback.js"
+      ]
+    }
+  }
+}
